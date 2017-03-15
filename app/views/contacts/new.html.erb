@@ -1,0 +1,22 @@
+<h1>New Contact</h1>
+<%= form_tag "/contacts", method: :post do %>
+  <div>
+    <%= label_tag :first_name %>
+    <%= text_field_tag :first_name %>
+  </div>
+  <div>
+    <%= label_tag :last_name %>
+    <%= text_field_tag :last_name %>
+  </div>
+  <div>
+    <%= label_tag :email %>
+    <%= text_field_tag :email %>
+  </div>
+  <div>
+    <%= label_tag :phone %>
+    <%= text_field_tag :phone %>
+  </div>
+  <div>
+    <%= submit_tag "Create Contact" %>
+  </div>
+<% end %>
