@@ -1,5 +1,7 @@
-<h1><%= @contact.first_name %> <%= @contact.last_name %></h1>
+<h1><%= @contact.first_name %> <%= @contact.middle_name %> <%= @contact.last_name %></h1>
 <h2>Email: <%= @contact.email %></h2>
 <h2>Phone: <%= @contact.phone %></h2>
+<h3>Bio</h3>
+<p><%= @contact.bio %></p>
 <%= link_to "Edit", "/contacts/#{@contact.id}/edit" %>
 <%= link_to "Delete", "/contacts/#{@contact.id}", method: :delete %>

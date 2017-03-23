@@ -2,7 +2,9 @@
 <% @contacts.each do |contact| %>
   <div>
     <h2><%= link_to contact.full_name, "/contacts/#{contact.id}" %></h2>
+    <h3>Middle name: <%= contact.middle_name %></h3>
     <h3>Email: <%= contact.email %></h3>
     <h3>Phone: <%= contact.japan_phone_number %></h3>
+    <h4>Bio: <%= contact.bio %></h4>
   </div>
 <% end %>
