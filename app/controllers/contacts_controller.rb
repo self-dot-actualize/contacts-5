@@ -1,6 +1,13 @@
 class ContactsController < ApplicationController
   def index
-    @contacts = Contact.all
+    # all_contacts = Contact.all
+    # @contacts = []
+    # ...
+    
+    # @contacts = Contact.where(user_id: current_user.id)
+
+    @contacts = current_user.contacts
+    
     render "index.html.erb"
   end
 
