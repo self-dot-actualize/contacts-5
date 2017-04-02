@@ -12,19 +12,19 @@
     </div>
   <% end %>
   <div>
-    First name: <input type="text" name="first_name">
+    First name: <input type="text" name="first_name" value="<%= @contact.first_name %>">
   </div>
   <div>
-    Middle name: <input type="text" name="middle_name">
+    Middle name: <input type="text" name="middle_name" value="<%= @contact.middle_name %>">
   </div>
   <div>
-    Last name: <input type="text" name="last_name">
+    Last name: <input type="text" name="last_name" value="<%= @contact.last_name %>">
   </div>
   <div>
-    Email: <input type="text" name="email">
+    Email: <input type="text" name="email" value="<%= @contact.email %>">
   </div>
   <div>
-    Phone: <input type="text" name="phone">
+    Phone: <input type="text" name="phone" value="<%= @contact.phone %>">
   </div>
   <input type="submit" value="Create contact">
 <% end %>
